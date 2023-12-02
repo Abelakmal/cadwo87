@@ -1,0 +1,89 @@
+{
+  "user": [
+    {
+      "id": "budi",
+      "username": "budi",
+      "email": "budi@gmail.com",
+      "password": "Testi123",
+      "image": ""
+    }
+  ],
+  "twit": [
+    {
+      "user": {
+        "id": "budi",
+        "username": "budi",
+        "image": ""
+      },
+      "content": {
+        "tglDitambahkan": "2023-12-02T18:38:28",
+        "image": "",
+        "message": "real nice one",
+        "respone": {
+          "like": [
+            {
+              "id": "budi",
+              "color": "red"
+            }
+          ],
+          "share": [
+            "budi"
+          ],
+          "comment": []
+        },
+        "status": true
+      },
+      "id": 1
+    },
+    {
+      "user": {
+        "id": "budi",
+        "username": "budi",
+        "image": ""
+      },
+      "content": {
+        "tglDitambahkan": "2023-12-02T18:48:45",
+        "image": "",
+        "message": "test bray",
+        "respone": {
+          "like": [
+            {
+              "id": "budi",
+              "color": "red"
+            }
+          ],
+          "share": [
+            "budi"
+          ],
+          "comment": []
+        }
+      },
+      "id": 2
+    },
+    {
+      "user": {
+        "id": "budi",
+        "username": "budi",
+        "image": ""
+      },
+      "content": {
+        "tglDitambahkan": "2023-12-03T00:53:16",
+        "image": "",
+        "message": "test",
+        "respone": {
+          "like": [
+            {
+              "id": "budi",
+              "color": "red"
+            }
+          ],
+          "share": [
+            "budi"
+          ],
+          "comment": []
+        }
+      },
+      "id": 3
+    }
+  ]
+}

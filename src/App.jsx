@@ -1,0 +1,28 @@
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import './App.css';
+import Content from './components/Content';
+import NotFound from './pages/NotFound';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Profile from './pages/Profile';
+import Message from './pages/Message';
+import Status from './pages/Status';
+
+
+function App() {
+  return (
+    <BrowserRouter >
+          <Routes>
+            <Route path="*" element={<NotFound />} />
+            <Route path="/" element={<Content />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/:id" element={<Profile />} />
+            <Route path="/message" element={<Message />} />
+            <Route path="/:id/status/:twitId" element={<Status />} />
+          </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
