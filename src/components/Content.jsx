@@ -1,9 +1,4 @@
-import {
-  Box,
-  Flex,
-  Image,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
@@ -12,6 +7,8 @@ import useGetTwit from '../hooks/useGetTwit';
 import Navbar1 from './Navbar';
 import Postingan from './Postingan';
 import InputTwet from './InputTwet';
+import Follow from './Follow';
+import axios from 'axios';
 
 const Content = () => {
   const Navigate = useNavigate();
@@ -33,38 +30,32 @@ const Content = () => {
     setTwit(dataTwet);
   };
 
-  const getTimePosting = (time) => {
-    if (time) {
-      const timePost = new Date(time);
-      const dateNow = new Date();
-      const minute = 60;
-      const hours = minute * 60;
-      const day = hours * 24;
-      const week = day * 7;
-      const month = week * 4;
-      const years = month * 12;
-
-      const selisihTime = (dateNow - timePost) / 1000;
-
-      if (selisihTime < minute) {
-        return `${selisihTime.toFixed(0)} seconds`;
-      }
-      if (selisihTime < hours) {
-        return `${(selisihTime / minute).toFixed(0)} minute`;
-      }
-      if (selisihTime < day) {
-        return `${(selisihTime / hours).toFixed(0)} hours`;
-      }
-      if (selisihTime < week) {
-        return `${selisihTime / day} day`;
-      }
-    }
-  };
 
   const getImage = async () => {
     const dataUSer = await useGetUser();
     const data = dataUSer.find((item) => item.username === token?.username);
     setImgPro(data?.image);
+  };
+
+  const handleInpuTwit = async (id, username, image, dateNow, newTwit,name) => {
+    await axios.post('http://localhost:3000/twit', {
+      user: {
+        id,
+        username,
+        name,
+        image,
+      },
+      content: {
+        tglDitambahkan: dateNow,
+        image: '',
+        message: newTwit,
+        respone: {
+          like: [],
+          share: [],
+          comment: [],
+        },
+      },
+    });
   };
 
   return (
@@ -74,18 +65,11 @@ const Content = () => {
           <Navbar1 />
           <Box display={'flex'} width={'80vw'}>
             <Box width={'80%'}>
-              <InputTwet imgPro={imgPro} token={token} getTwit={getTwit} />
-              <Postingan twit={twit} getTimePosting={getTimePosting} token={token} getTwit={getTwit} />
+              <InputTwet imgPro={imgPro} token={token} getTwit={getTwit} handleInput={handleInpuTwit} placeHolder={"What's happening ?"} button={"share"}/>
+              <Postingan twit={twit} token={token} getTwit={getTwit}  />
             </Box>
 
-            <Box position={'sticky'} h={'100vh'} top={'0'} borderLeft={'solid 1px'} display={'flex'} justifyContent={'center'} pt={'12px'} w={'20%'}>
-              <Box>
-                <Text>Who to Follow</Text>
-                <Image src="/no_profile.png" borderRadius={'100%'} h={'40px'} />
-                <Image src="/no_profile.png" borderRadius={'100%'} h={'40px'} />
-                <Image src="/no_profile.png" borderRadius={'100%'} h={'40px'} />
-              </Box>
-            </Box>
+            <Follow />
           </Box>
         </Flex>
       )}

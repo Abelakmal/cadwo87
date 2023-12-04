@@ -6,30 +6,104 @@
       "email": "budi@gmail.com",
       "password": "Testi123",
       "image": ""
+    },
+    {
+      "id": "develover",
+      "username": "develover",
+      "email": "develover@gmail.com",
+      "password": "Develover123",
+      "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png",
+      "name": "darnot"
     }
   ],
   "twit": [
     {
       "user": {
-        "id": "budi",
-        "username": "budi",
-        "image": ""
+        "id": "develover",
+        "username": "develover",
+        "name": "darnot",
+        "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
       },
       "content": {
-        "tglDitambahkan": "2023-12-02T18:38:28",
+        "tglDitambahkan": "2023-12-04T07:44:07",
         "image": "",
-        "message": "real nice one",
+        "message": "jbuii",
         "respone": {
           "like": [
             {
-              "id": "budi",
+              "id": "develover",
               "color": "red"
             }
           ],
           "share": [
-            "budi"
+            "develover"
           ],
-          "comment": []
+          "comment": [
+            {
+              "id": 1,
+              "user": {
+                "id": "develover",
+                "username": "develover",
+                "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T07:44:17",
+                "image": "",
+                "message": "bisa coment",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
+            },
+            {
+              "id": 2,
+              "idUser": "develover",
+              "message": "gg bray"
+            },
+            {
+              "id": 3,
+              "idUser": "develover",
+              "message": "test"
+            },
+            {
+              "id": 4,
+              "user": {
+                "id": "develover",
+                "username": "develover",
+                "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T10:03:09",
+                "image": "",
+                "message": "test",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
+            },
+            {
+              "id": 5,
+              "user": {
+                "id": "develover",
+                "username": "develover",
+                "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T10:03:15",
+                "image": "",
+                "message": "test",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
+            }
+          ]
         },
         "status": true
       },
@@ -37,24 +111,18 @@
     },
     {
       "user": {
-        "id": "budi",
-        "username": "budi",
-        "image": ""
+        "id": "develover",
+        "username": "develover",
+        "name": "darnot",
+        "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
       },
       "content": {
-        "tglDitambahkan": "2023-12-02T18:48:45",
+        "tglDitambahkan": "2023-12-04T09:41:55",
         "image": "",
-        "message": "test bray",
+        "message": "gg",
         "respone": {
-          "like": [
-            {
-              "id": "budi",
-              "color": "red"
-            }
-          ],
-          "share": [
-            "budi"
-          ],
+          "like": [],
+          "share": [],
           "comment": []
         }
       },
@@ -62,28 +130,60 @@
     },
     {
       "user": {
-        "id": "budi",
-        "username": "budi",
-        "image": ""
+        "id": "develover",
+        "username": "develover",
+        "name": "darnot",
+        "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
       },
       "content": {
-        "tglDitambahkan": "2023-12-03T00:53:16",
+        "tglDitambahkan": "2023-12-04T10:03:56",
         "image": "",
-        "message": "test",
+        "message": "berhasil",
         "respone": {
-          "like": [
+          "like": [],
+          "share": [],
+          "comment": [
             {
-              "id": "budi",
-              "color": "red"
+              "id": 1,
+              "user": {
+                "id": "develover",
+                "username": "develover",
+                "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T10:04:07",
+                "image": "",
+                "message": "ko berhasil?",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
+            },
+            {
+              "id": 2,
+              "user": {
+                "id": "develover",
+                "username": "develover",
+                "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T10:04:13",
+                "image": "",
+                "message": "gak tau",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
             }
-          ],
-          "share": [
-            "budi"
-          ],
-          "comment": []
+          ]
         }
       },
       "id": 3
     }
-  ]
+  ],
+  "message": []
 }

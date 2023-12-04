@@ -4,16 +4,28 @@ import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import useGetUser from '../hooks/useGetUser';
 
-const InputTwet = ({ imgPro, token, getTwit }) => {
+const InputTwet = ({  token, getTwit ,handleInput ,placeHolder,button}) => {
   const [jumlahInput, setJumlahInput] = useState(0);
+  const [imgPro, setImgPro] = useState('');
   const [newTwit, setNewTwit] = useState();
+
+  useEffect(() =>{
+    getImage()
+  },[])
 
 
   const getUserById = async (id) => {
     const { data } = await axios.get(`http://localhost:3000/user/${id}`);
     return data;
+  };
+
+  const getImage = async () => {
+    const dataUSer = await useGetUser();
+    const data = dataUSer.find((item) => item.username === token?.username);
+    setImgPro(data?.image);
   };
 
   const handleChangeInput = (e) => {
@@ -35,23 +47,8 @@ const InputTwet = ({ imgPro, token, getTwit }) => {
       minutes.length !== 2 ? '0' : ''
     }${minutes}:${seconds.length !== 2 ? '0' : ''}${date.getSeconds()}`;
 
-    await axios.post('http://localhost:3000/twit', {
-      user: {
-        id: dataUserById.id,
-        username: dataUserById.username,
-        image: dataUserById.image
-      },
-      content: {
-        tglDitambahkan: dateNow,
-        image: '',
-        message: newTwit,
-        respone: {
-          like: [],
-          share: [],
-          comment: [],
-        },
-      },
-    });
+    await handleInput(dataUserById.id , dataUserById.username, dataUserById.image ,dateNow , newTwit ,dataUserById.name)
+
     getTwit();
   };
 
@@ -63,7 +60,7 @@ const InputTwet = ({ imgPro, token, getTwit }) => {
           <Box display={'flex'} p={'18px'}>
             <Image src={imgPro || '/no_profile.png'} borderRadius={'100%'} h={'80px'} mx={'30px'} />
             <Flex flexDirection={'column'} alignItems={'end'} width={'100%'}>
-              <Textarea placeholder="What's happening ?" border={'solid 1px'} disabled={token ? false : true} maxLength={150} name="message" resize={'none'} onChange={(e) => handleChangeInput(e.target.value)}></Textarea>
+              <Textarea placeholder={placeHolder} border={'solid 1px'} disabled={token ? false : true} maxLength={150} name="message" resize={'none'} onChange={(e) => handleChangeInput(e.target.value)}></Textarea>
               <Text textColor={'white'}>{jumlahInput}/150</Text>
             </Flex>
           </Box>
@@ -81,7 +78,7 @@ const InputTwet = ({ imgPro, token, getTwit }) => {
             </Button>
           </Box>
           <Button type="submit" m={'12px'} colorScheme="blue" color={'white'}>
-            Share
+            {button}
           </Button>
         </Flex>
       </form>

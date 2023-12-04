@@ -8,7 +8,8 @@ const Message = () => {
     <Flex>
         <Navbar />
         <Box>
-            <Test />
+            {/* <Test />
+             */}
         </Box>
     </Flex>
   )

@@ -59,7 +59,7 @@ const Navbar = () => {
               <Flex alignItems={'center'}>
                 <Image src={imgPro || '/no_profile.png'} alt="" width={'50px'} borderRadius={'100%'} onClick={() => setShow(!show)} cursor={'pointer'} />
                 <Box>
-                  <Text>{token?.username}</Text>
+                  <Text>{token?.name ||token?.username}</Text>
                   <Text>@{token?.username}</Text>
                 </Box>
               </Flex>
