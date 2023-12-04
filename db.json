@@ -33,6 +33,9 @@
             {
               "id": "develover",
               "color": "red"
+            },
+            {
+              "color": "red"
             }
           ],
           "share": [
@@ -172,6 +175,24 @@
                 "tglDitambahkan": "2023-12-04T10:04:13",
                 "image": "",
                 "message": "gak tau",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
+            },
+            {
+              "id": 3,
+              "user": {
+                "id": "develover",
+                "username": "develover",
+                "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T10:29:09",
+                "image": "",
+                "message": "can",
                 "respone": {
                   "like": [],
                   "share": [],
