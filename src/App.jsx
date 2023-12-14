@@ -7,6 +7,8 @@ import Register from './pages/Register';
 import Profile from './pages/Profile';
 import Message from './pages/Message';
 import Status from './pages/Status';
+import Notification from './pages/Notification';
+import Chat from './pages/Chat';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/:id" element={<Profile />} />
             <Route path="/message" element={<Message />} />
+            <Route path="/message/:idUser" element={<Chat />} />
+            <Route path="/notification" element={<Notification />} />
             <Route path="/:id/status/:twitId" element={<Status />} />
           </Routes>
     </BrowserRouter>

@@ -33,7 +33,6 @@ const Status = () => {
     setDataTwitById(twitUser);
   };
 
-
   const getUserById = async () => {
     const userByid = await useGetUserById(token.id);
     setDataUserById(userByid);
@@ -89,7 +88,7 @@ const Status = () => {
     return 'Invalid';
   };
 
-  const handleInputComment  = async (id, username, image, dateNow, newTwit) => {
+  const handleInputComment = async (id, username, image, dateNow, newTwit) => {
     await axios.patch(`http://localhost:3000/twit/${twitId}`, {
       content: {
         ...dataTwitById.content,
@@ -98,7 +97,7 @@ const Status = () => {
           comment: [
             ...dataTwitById.content.respone.comment,
             {
-            id: dataTwitById.content.respone.comment.length + 1,
+              id: dataTwitById.content.respone.comment.length + 1,
               user: {
                 id,
                 username,
@@ -108,16 +107,11 @@ const Status = () => {
                 tglDitambahkan: dateNow,
                 image: '',
                 message: newTwit,
-                respone: {
-                  like: [],
-                  share: [],
-                  comment: [],
-                },
               },
-            }
-          ]
-        }
-      }
+            },
+          ],
+        },
+      },
     });
   };
 
@@ -160,10 +154,13 @@ const Status = () => {
             {dataTwitById && <Respone item={dataTwitById} getTwit={getTwitByIdUser} token={token} />}
           </Box>
         </Box>
-        <Text ml={40} display={'flex'}> membalas <Text color={'blue'}>@{dataTwitById.user?.username}</Text></Text>
-        <InputTwet token={token} placeHolder={"Postingan Balasan Anda"} button={"balas"} handleInput={handleInputComment} getTwit={getTwitByIdUser}/>
-        
-        {dataTwitById.content?.respone && <Postingan twit={dataTwitById.content?.respone?.comment}  getTwit={getTwitByIdUser}/>}
+        <Text ml={40} display={'flex'}>
+          {' '}
+          membalas <Text color={'blue'}>@{dataTwitById.user?.username}</Text>
+        </Text>
+        <InputTwet token={token} placeHolder={'Postingan Balasan Anda'} button={'balas'} handleInput={handleInputComment} getTwit={getTwitByIdUser} />
+
+        {dataTwitById.content?.respone && <Postingan twit={dataTwitById.content?.respone?.comment} getTwit={getTwitByIdUser} />}
       </Box>
       <Follow />
     </Flex>

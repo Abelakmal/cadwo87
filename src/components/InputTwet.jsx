@@ -56,9 +56,9 @@ const InputTwet = ({  token, getTwit ,handleInput ,placeHolder,button}) => {
   return (
     <Box p={'12px'} borderBottom={'solid 1px'}>
       <form onSubmit={handleSubmitInput}>
-        <FormControl>
+        <FormControl> 
           <Box display={'flex'} p={'18px'}>
-            <Image src={imgPro || '/no_profile.png'} borderRadius={'100%'} h={'80px'} mx={'30px'} />
+            <Image src={imgPro || '/no_profile.png'} borderRadius={'100%'} h={'80px'} w={'80px'} mx={'30px'} objectFit={'cover'}/>
             <Flex flexDirection={'column'} alignItems={'end'} width={'100%'}>
               <Textarea placeholder={placeHolder} border={'solid 1px'} disabled={token ? false : true} maxLength={150} name="message" resize={'none'} onChange={(e) => handleChangeInput(e.target.value)}></Textarea>
               <Text textColor={'white'}>{jumlahInput}/150</Text>

@@ -49,6 +49,12 @@ const InputEditProfile = ({ showEditProfile, id, dataUser, getData ,twit}) => {
                   ...item.user,
                   image: values.image,
                   name: values.name
+              }, 
+              respone: {
+                ...item.respone,
+                comment: [
+                      
+                ]
               }
             })
       })

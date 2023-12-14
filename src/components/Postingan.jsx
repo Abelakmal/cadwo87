@@ -6,7 +6,6 @@ import { Link as ChakraLink } from '@chakra-ui/react';
 import Respone from './Respone';
 
 const Postingan = ({ twit, token, getTwit }) => {
-
   const getTimePosting = (time) => {
     if (time) {
       const timePost = new Date(time);
@@ -49,10 +48,10 @@ const Postingan = ({ twit, token, getTwit }) => {
                 <Box width={'100%'}>
                   <Flex alignItems={'center'}>
                     <Box>
-                    <Text fontSize={'25px'} fontFamily={'monospace'} fontWeight={'bold'}>
-                      {item.user?.name || item.user?.username}
-                    </Text>
-                    <Text>{`@${item.user?.username}`}</Text>
+                      <Text fontSize={'25px'} fontFamily={'monospace'} fontWeight={'bold'}>
+                        {item.user?.name || item.user?.username}
+                      </Text>
+                      <Text>{`@${item.user?.username}`}</Text>
                     </Box>
                     <Text ml={'9px'} fontFamily={'monospace'}>
                       about {getTimePosting(item.content?.tglDitambahkan)}
@@ -65,7 +64,7 @@ const Postingan = ({ twit, token, getTwit }) => {
                 </Box>
               </Box>
             </ChakraLink>
-            <Respone item={item} token={token} getTwit={getTwit} id={item?.id} />
+            {item.content?.respone && <Respone item={item} token={token} getTwit={getTwit} id={item?.id} />}
           </Box>
         );
       })}

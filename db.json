@@ -14,6 +14,14 @@
       "password": "Develover123",
       "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png",
       "name": "darnot"
+    },
+    {
+      "id": "abelakmal80",
+      "username": "abelakmal80",
+      "email": "abelakmal80@gmail.com",
+      "password": "Abelakmal80",
+      "image": "https://image.gambarpng.id/pngs/gambar-transparent-cute-cup-doodle-line-art-black-white-vector_46835.png",
+      "name": "dam"
     }
   ],
   "twit": [
@@ -35,6 +43,7 @@
               "color": "red"
             },
             {
+              "id": "abelakmal80",
               "color": "red"
             }
           ],
@@ -59,16 +68,6 @@
                   "comment": []
                 }
               }
-            },
-            {
-              "id": 2,
-              "idUser": "develover",
-              "message": "gg bray"
-            },
-            {
-              "id": 3,
-              "idUser": "develover",
-              "message": "test"
             },
             {
               "id": 4,
@@ -105,6 +104,24 @@
                   "comment": []
                 }
               }
+            },
+            {
+              "id": 6,
+              "user": {
+                "id": "develover",
+                "username": "develover",
+                "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T13:11:38",
+                "image": "",
+                "message": "bisalah",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
             }
           ]
         },
@@ -124,9 +141,87 @@
         "image": "",
         "message": "gg",
         "respone": {
-          "like": [],
+          "like": [
+            {
+              "id": "abelakmal80",
+              "color": "red"
+            }
+          ],
           "share": [],
-          "comment": []
+          "comment": [
+            {
+              "id": 1,
+              "user": {
+                "id": "abelakmal80",
+                "username": "abelakmal80",
+                "image": "https://i.pinimg.com/564x/c4/dc/29/c4dc291eb01d1322d276ba5fef4e5233.jpg"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T15:58:03",
+                "image": "",
+                "message": "gila berhasil",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
+            },
+            {
+              "id": 2,
+              "user": {
+                "id": "abelakmal80",
+                "username": "abelakmal80",
+                "image": "https://i.pinimg.com/564x/c4/dc/29/c4dc291eb01d1322d276ba5fef4e5233.jpg"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T15:58:12",
+                "image": "",
+                "message": "ko gitu anjir",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
+            },
+            {
+              "id": 3,
+              "user": {
+                "id": "abelakmal80",
+                "username": "abelakmal80",
+                "image": "https://i.pinimg.com/564x/c4/dc/29/c4dc291eb01d1322d276ba5fef4e5233.jpg"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T15:58:21",
+                "image": "",
+                "message": "mana we tahu",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
+            },
+            {
+              "id": 4,
+              "user": {
+                "id": "abelakmal80",
+                "username": "abelakmal80",
+                "image": "https://i.pinimg.com/564x/c4/dc/29/c4dc291eb01d1322d276ba5fef4e5233.jpg"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T15:58:39",
+                "image": "",
+                "message": "coba anjir masa lo gak nyoba gitu aja repot",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
+            }
+          ]
         }
       },
       "id": 2
@@ -143,7 +238,12 @@
         "image": "",
         "message": "berhasil",
         "respone": {
-          "like": [],
+          "like": [
+            {
+              "id": "abelakmal80",
+              "color": "red"
+            }
+          ],
           "share": [],
           "comment": [
             {
@@ -199,12 +299,246 @@
                   "comment": []
                 }
               }
+            },
+            {
+              "id": 4,
+              "user": {
+                "id": "abelakmal80",
+                "username": "abelakmal80",
+                "image": ""
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-04T13:12:52",
+                "image": "",
+                "message": "gila pro",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
             }
           ]
         }
       },
       "id": 3
+    },
+    {
+      "user": {
+        "id": "develover",
+        "username": "develover",
+        "name": "darnot",
+        "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
+      },
+      "content": {
+        "tglDitambahkan": "2023-12-05T10:13:43",
+        "image": "",
+        "message": "asli geng",
+        "respone": {
+          "like": [
+            {
+              "id": "develover",
+              "color": "red"
+            },
+            {
+              "id": "abelakmal80",
+              "color": "red"
+            }
+          ],
+          "share": [
+            "develover"
+          ],
+          "comment": [
+            {
+              "id": 1,
+              "user": {
+                "id": "develover",
+                "username": "develover",
+                "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-05T10:14:01",
+                "image": "",
+                "message": "testing",
+                "respone": {
+                  "like": [],
+                  "share": [],
+                  "comment": []
+                }
+              }
+            }
+          ]
+        },
+        "status": true
+      },
+      "id": 4
+    },
+    {
+      "user": {
+        "id": "abelakmal80",
+        "username": "abelakmal80",
+        "name": "dam",
+        "image": "https://image.gambarpng.id/pngs/gambar-transparent-cute-cup-doodle-line-art-black-white-vector_46835.png"
+      },
+      "content": {
+        "tglDitambahkan": "2023-12-06T15:00:11",
+        "image": "",
+        "message": "testing geng\n",
+        "respone": {
+          "like": [
+            {
+              "id": "abelakmal80",
+              "color": "red"
+            }
+          ],
+          "share": [],
+          "comment": [
+            {
+              "id": 1,
+              "user": {
+                "id": "abelakmal80",
+                "username": "abelakmal80",
+                "image": "https://i.pinimg.com/564x/c4/dc/29/c4dc291eb01d1322d276ba5fef4e5233.jpg"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-06T15:00:17",
+                "image": "",
+                "message": "hallo"
+              }
+            },
+            {
+              "id": 2,
+              "user": {
+                "id": "abelakmal80",
+                "username": "abelakmal80",
+                "image": "https://i.pinimg.com/564x/c4/dc/29/c4dc291eb01d1322d276ba5fef4e5233.jpg"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-06T15:00:23",
+                "image": "",
+                "message": "ko bisa"
+              }
+            },
+            {
+              "id": 3,
+              "user": {
+                "id": "abelakmal80",
+                "username": "abelakmal80",
+                "image": "https://i.pinimg.com/564x/c4/dc/29/c4dc291eb01d1322d276ba5fef4e5233.jpg"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-06T15:00:29",
+                "image": "",
+                "message": "gak tau"
+              }
+            }
+          ]
+        }
+      },
+      "id": 5,
+      "respone": {
+        "comment": []
+      }
+    },
+    {
+      "user": {
+        "id": "abelakmal80",
+        "username": "abelakmal80",
+        "name": "dam",
+        "image": "https://image.gambarpng.id/pngs/gambar-transparent-cute-cup-doodle-line-art-black-white-vector_46835.png"
+      },
+      "content": {
+        "tglDitambahkan": "2023-12-06T15:03:01",
+        "image": "",
+        "message": "my commit pertama",
+        "respone": {
+          "like": [
+            {
+              "id": "abelakmal80",
+              "color": "red"
+            }
+          ],
+          "share": [],
+          "comment": []
+        }
+      },
+      "id": 6,
+      "respone": {
+        "comment": []
+      }
+    },
+    {
+      "user": {
+        "id": "abelakmal80",
+        "username": "abelakmal80",
+        "name": "dam",
+        "image": "https://image.gambarpng.id/pngs/gambar-transparent-cute-cup-doodle-line-art-black-white-vector_46835.png"
+      },
+      "content": {
+        "tglDitambahkan": "2023-12-06T15:30:59",
+        "image": "",
+        "message": "test",
+        "respone": {
+          "like": [
+            {
+              "id": "abelakmal80",
+              "color": "red"
+            }
+          ],
+          "share": [
+            "abelakmal80"
+          ],
+          "comment": [
+            {
+              "id": 1,
+              "user": {
+                "id": "abelakmal80",
+                "username": "abelakmal80",
+                "image": "https://i.pinimg.com/564x/c4/dc/29/c4dc291eb01d1322d276ba5fef4e5233.jpg"
+              },
+              "content": {
+                "tglDitambahkan": "2023-12-06T15:31:20",
+                "image": "",
+                "message": "testing"
+              }
+            }
+          ]
+        },
+        "status": true
+      },
+      "id": 7,
+      "respone": {
+        "comment": []
+      }
     }
   ],
-  "message": []
+  "chat": [
+    {
+      "id": 1,
+      "user": {
+        "id": "abelakmal80",
+        "username": "abelakmal80",
+        "name": "abel",
+        "image": "https://i.pinimg.com/564x/c4/dc/29/c4dc291eb01d1322d276ba5fef4e5233.jpg"
+      },
+      "user2": {
+        "id": "develover",
+        "username": "develover",
+        "name": "darnot",
+        "image": "https://png.pngtree.com/png-vector/20230531/ourlarge/pngtree-cute-ghost-drawing-on-white-background-vector-png-image_6788597.png"
+      },
+      "message": [
+        {
+          "chat1": {
+            "id": "abelakmal80",
+            "message": "hello bray"
+          },
+          "chat2": {
+            "id": "develover",
+            "message": "hello back"
+          }
+        }
+      ]
+    }
+  ]
 }
